@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h2> {{university}} students </h2>
+<hr> 
+{% for student in students %}
+    {{student}}
+{% endfor %}
+
+{% endblock content %}
